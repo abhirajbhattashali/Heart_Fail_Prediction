@@ -13,6 +13,18 @@ The model is a neural network built using TensorFlow and Keras. It consists of:
 - Input layer
 - Hidden layer with 24 neurons and ReLU activation function
 - Output layer with 2 neurons (for predicting the presence or absence of heart failure) and softmax activation function
+- Here is the model architecture from the script:
+
+```python
+# Design the model
+model = Sequential()
+# Add the input layer
+model.add(InputLayer(input_shape=(x_train.shape[1],)))
+# Add a hidden layer
+model.add(Dense(24, activation='relu'))
+# Add an output layer 
+model.add(Dense(2, activation='softmax'))
+```
 
 ## Training
 
